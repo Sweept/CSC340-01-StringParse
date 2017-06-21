@@ -1,8 +1,8 @@
 // ReformatDate.cpp : Defines the entry point for the console application.
 //
-
-#include "string"
-#include "iostream"
+#include <string>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -116,17 +116,16 @@ string USAFormat2Uni(string dateIn) {
 }
 int main()
 {
-	string USAFormat1("1st Mar 1984");
-	string UniFormat1 = USAFormat2Uni(USAFormat1);
-	cout << UniFormat1 << endl;
+	vector<string> dates;
+	dates.push_back("1st Mar 1984");
+	dates.push_back("2nd Feb 2013");
+	dates.push_back("15th Apr 1840");
 
-	string USAFormat2("2nd Feb 2013");
-	string UniFormat2 = USAFormat2Uni(USAFormat2);
-	cout << UniFormat2 << endl;
-
-	string USAFormat3("15th Apr 1840");
-	string UniFormat3 = USAFormat2Uni(USAFormat3);
-	cout << UniFormat3 << endl;
+	for (int i = 0; i < dates.size(); i++)
+	{
+		string dateFormatd = USAFormat2Uni(dates[i]);
+		cout << dateFormatd << endl;
+	}
 
 	return 0;
 }
