@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="part2Tokens.cpp" />
     <ClCompile Include="ReformatDate.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

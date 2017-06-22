@@ -18,5 +18,8 @@
     <ClCompile Include="ReformatDate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="part2Tokens.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

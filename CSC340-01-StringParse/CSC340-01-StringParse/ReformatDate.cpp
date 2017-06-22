@@ -114,6 +114,7 @@ string USAFormat2Uni(string dateIn) {
 	decodeFormatOne(dateIn, date, month, year);
 	return Date2UniFormat(date, month, year);
 }
+#if 0
 int main()
 {
 	vector<string> dates;
@@ -129,6 +130,7 @@ int main()
 
 	return 0;
 }
+#endif
 
 
 
